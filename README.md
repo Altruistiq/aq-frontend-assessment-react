@@ -31,8 +31,6 @@ Create a chart animating carbon footprint per country throughout the years. The 
 
     ```jsx
     // get all countries
-    await this.$store.dispatch('getCountries')
-
     // [
     //   {
     //       "id": 1,
@@ -56,8 +54,6 @@ Create a chart animating carbon footprint per country throughout the years. The 
     // ]  
 
     // get data for a single country by countryCode
-    await this.$store.dispatch('getCountry', { countryCode: 229 })
-
     // [
     //    {
     //       "id": 4193,
