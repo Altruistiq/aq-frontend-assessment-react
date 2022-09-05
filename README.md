@@ -10,22 +10,24 @@ Create a chart animating carbon footprint per country throughout the years. The 
 
 **Requirements**
 
-1. use data from the [Footprint network](https://data.footprintnetwork.org/#/api) and store in Vuex
-2. cache data with timeout of 5 minutes, making sure upon reload the app conditionally uses stored data
-3. use either components, native DOM or D3 to create the chart. 
-4. animate the sorting and bar length of the chart as per the provided example. 
-5. chart should be responsive, test by changing the window size (dragging)
-6. calculate and show world total footprint on the page
-7. do not use chart / css / component / animation / caching libraries. The idea is that you show your skills by coding this manually.
-8. pixel perfect implement the provided Figma file
+1. use either components, native DOM or D3 to create the chart. 
+2. animate the sorting and bar length of the chart as per the provided example. 
+3. chart should be responsive, test by changing the window size (dragging)
+4. calculate and show world total footprint on the page
+5. do not use chart / css / component / animation / caching libraries. The idea is that you show your skills by coding this manually.
+6. pixel perfect implement the provided Figma file
 
 **Get started**
 
 1. [Get this Figma file](https://www.figma.com/file/WJ1BvQzvFchIFxo67iIywi/Altruistiq-frontend-hiring-task). The ... in the chart is a placeholder. The idea is that you show all the countries from the API response in the chart.
 
-1. Clone this repo, then `npm i` and `npm run dev` to start a development app (uses Vite and React)
+2. Clone this repo, then `npm i`
 
-2. Use the 2 API calls provided to get a list of countries and to get emission data per country per year. Do this for all countries. To chart the carbon footprint for a specific year, you need the `carbon` attribute from the response. Note that for some countries data for a specific year is missing.
+3. Copy the provided **secret** into line 5 of `App.jsx`
+
+4. `npm run dev` to start a development app (uses Vite and React)
+
+5. Use the 2 API calls provided to get a list of countries and to get emission data per country per year. Do this for all countries. To chart the carbon footprint for a specific year, you need the `carbon` attribute from the response. Note that for some countries data for a specific year is missing.
   
    
 
@@ -78,11 +80,11 @@ Create a chart animating carbon footprint per country throughout the years. The 
     
     ```
     
-2. Cache results in browser with a timeout of 5 minutes. This  means that if someone refreshes the app within the 5 minutes timeout, the app loads data from the cache. Once the cache expires, it queries the endpoints again.
+6. Cache results in browser with a timeout of 5 minutes. This  means that if someone refreshes the app within the 5 minutes timeout, the app loads data from the cache. Once the cache expires, it queries the endpoints again.
 
-3. Build the page as per the Figma design, and make the chart functional as per the example GIF
+7. Build the page as per the Figma design, and make the chart functional as per the example GIF
 
-4. Used fonts
+8. Used fonts
     
     ```jsx
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
