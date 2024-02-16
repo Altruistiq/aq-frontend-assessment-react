@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react'
 import { prettyPrintJson } from 'pretty-print-json';
 import './App.css'
 
-const API_CREDENTIALS = '' // TODO fille out secret here!
+const API_KEY = '' // TODO fille out API_KEY here!
+const API_CREDENTIALS = 'Basic ' + window.btoa(`any-user-name:${API_KEY}`) 
 
 function App() {
   const [countries, updateCountries] = useState()
